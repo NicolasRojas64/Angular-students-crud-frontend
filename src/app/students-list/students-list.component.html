@@ -1,0 +1,18 @@
+<h2  class="text-center">Lista de estudiantes</h2>
+<br>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>NOMBRE</th>
+            <th>APELLIDO</th>
+            <th>E - MAIL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+            <td>{{student.name}}</td>
+            <td>{{student.lastName}}</td>
+            <td>{{student.email}}</td>
+        </tr>
+    </tbody>
+</table>
